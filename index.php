@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
     <meta content="telephone=no,email=no" name="format-detection" />
-    <title>云山幼儿园大一班专用——随机习题</title>
+    <title>YOYO随机习题</title>
     <meta charset="UTF-8">
     <style>
         body{
@@ -26,7 +26,7 @@
         a.hl{
             color:red;
             padding-left:12px;
-            background-image:url('arraw-right.png');
+            background-image:url('img/arraw-right.png');
             background-repeat:no-repeat;
             background-size:10px;
             background-position: 2px;
@@ -52,14 +52,14 @@
         }
         if(userAnswer){
             if(answer==userAnswer){
-                document.getElementById("chk-icon-"+id).innerHTML = "<img src='./smile-green.png' />";
+                document.getElementById("chk-icon-"+id).innerHTML = "<img src='./img/smile-green.png' />";
                 score = score + 10;
             }else{
                 var history = document.getElementById("chk-icon-"+id).innerHTML;
                 if(history.indexOf('smile-green.png')!=-1){
                     score = score - 10;
                 }
-                document.getElementById("chk-icon-"+id).innerHTML = "<img src='./wrong-fill.png' />";
+                document.getElementById("chk-icon-"+id).innerHTML = "<img src='./img/wrong-fill.png' />";
             }
         }
         document.getElementById("score").innerHTML = '<span>得分</span>' + score;
